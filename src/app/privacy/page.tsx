@@ -6,7 +6,6 @@ export default function PrivacyPage() {
       <p>Last updated: July 2026</p>
       <h2>1. Introduction</h2>
       <p>MB Send (“we”, “us”, “our”) is committed to protecting your privacy...</p>
-      {/* conteúdo completo mais tarde */}
     </LegalPage>
   );
 }
