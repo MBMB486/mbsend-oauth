@@ -49,9 +49,9 @@ export default function Home() {
       {/* Trust Metrics */}
       <section className="py-16 bg-gray-50">
         <Stats stats={[
-          { value: 500000, suffix: '+', label: 'Active Users' },
-          { value: 20, suffix: '+', label: 'Supported Countries' },
-          { value: 150, suffix: 'M+', label: 'Processed Volume (USD)' },
+          { value: 2, suffix: '+', label: 'Active Users' },
+          { value: 2, suffix: '+', label: 'Supported Countries' },
+          { value: 300, suffix: 'k+', label: 'Processed Volume (USD)' },
         ]} />
       </section>
 

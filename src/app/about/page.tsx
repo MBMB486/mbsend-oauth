@@ -28,9 +28,9 @@ export default function AboutPage() {
         
         <div className="mt-20">
           <Stats stats={[
-            { value: 2022, suffix: '', label: 'Founded' },
-            { value: 100, suffix: '+', label: 'Team Members' },
-            { value: 3, suffix: '', label: 'Offices Worldwide' },
+            { value: 1, suffix: '', label: 'Founded' },
+            { value: 2, suffix: '+', label: 'Team Members' },
+            { value: 2, suffix: '', label: 'Offices Worldwide' },
           ]} />
         </div>
       </div>
