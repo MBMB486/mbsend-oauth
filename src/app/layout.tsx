@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MB Send – Cross-Border Payments Simplified",
   description: "MB Send is a modern fintech platform enabling fast, secure international money transfers.",
+  icons: {
+    icon: "/images/logo.svg",   // 👈 adiciona esta linha
+  },
 };
 
 export default function RootLayout({
