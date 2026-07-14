@@ -5,21 +5,19 @@ export async function POST(request: Request) {
   try {
     const { name, email, message } = await request.json();
 
-    // Configura o transportador SMTP da one.com
     const transporter = nodemailer.createTransport({
-      host: 'send.one.com',
-      port: 465,
-      secure: true, // true para 465, false para outras portas
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT),
+      secure: true,
       auth: {
-        user: 'no-reply@mbsend.com',     // email que envia
-        pass: 'password',              // password desse email
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     });
 
-    // Envia para os dois destinatários
     await transporter.sendMail({
-      from: `"MB Send Contact" <no-reply@mbsend.com>`,
-      to: 'support.ia@mbsend.com, geralinfo@mbsend.com', // destinatários
+      from: `"MB Send Contact" <${process.env.SMTP_USER}>`,
+      to: 'support.ia@mbsend.com, geralinfo@mbsend.com',
       subject: `New message from ${name}`,
       html: `
         <h3>New Contact Message</h3>
@@ -31,7 +29,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error(error);
+    console.error('Email error:', error);
     return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
   }
 }

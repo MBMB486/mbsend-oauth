@@ -17,19 +17,19 @@ export default function Home() {
       icon: Zap,
       title: 'Partner-Led Local Payouts',
       description:
-        'Built to connect EU pay-ins with local payout rails such as bank transfers, wallets and mobile money through regulated partners.',
+        'Built to connect European pay-ins with local payout options such as bank transfers, wallets and mobile money through approved partners.',
     },
     {
       icon: Shield,
-      title: 'Compliance-First Architecture',
+      title: 'Compliance-First Approach',
       description:
-        'KYC, AML, transaction monitoring and audit trails are part of the operating model from day one.',
+        'Verification, monitoring, auditability and responsible corridor execution are considered from the earliest stages.',
     },
     {
       icon: Users,
-      title: 'From B2C to B2B Infrastructure',
+      title: 'B2C First, Infrastructure Next',
       description:
-        'Starting with consumer remittances, then expanding toward business payments, APIs and corridor infrastructure.',
+        'Starting with consumer transfers, then expanding responsibly toward business payments, partner integrations and API-led use cases.',
     },
   ];
 
@@ -39,7 +39,7 @@ export default function Home() {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center md:text-left md:flex md:items-center md:gap-16">
         <div className="md:w-1/2 space-y-6">
           <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">
-            Licensing-first fintech infrastructure
+            Fintech infrastructure for emerging-market corridors
           </span>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -53,9 +53,10 @@ export default function Home() {
           </p>
 
           <p className="text-sm text-gray-500 max-w-xl">
-            We are currently preparing a regulated, partner-led launch. The customer
-            experience is designed to remain fiat-in / fiat-out, while settlement and
-            treasury infrastructure are handled through compliant partners.
+            We are currently preparing a partner-led launch around approved
+            infrastructure, compliance workflows and local payout connectivity.
+            The customer experience is designed to remain simple, transparent
+            and fiat-in / fiat-out.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -78,7 +79,7 @@ export default function Home() {
         <div className="mt-12 md:mt-0 md:w-1/2">
           <img
             src="/images/app-mockup.svg"
-            alt="MB Send App interface preview"
+            alt="MB Send app interface preview"
             className="rounded-3xl w-full h-auto max-h-96 object-contain"
           />
         </div>
@@ -88,7 +89,7 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <Stats
           stats={[
-            { value: 300, suffix: 'K+', label: 'EUR pilot volume validated' },
+            { value: 300, suffix: 'K+', label: 'Pilot volume validated' },
             { value: 2, suffix: '', label: 'Initial corridors' },
             { value: 100, suffix: '+', label: 'Early users reached manually' },
           ]}
@@ -116,7 +117,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeading
             title="Current focus"
-            subtitle="MB Send is preparing the next stage of execution with regulated partners, legal guidance and corridor-specific payout infrastructure."
+            subtitle="Preparing the next stage of execution with partner-led infrastructure, legal guidance and corridor-specific payout connectivity."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
@@ -125,8 +126,8 @@ export default function Home() {
                 Portugal → Mozambique
               </h3>
               <p className="text-gray-600 text-sm">
-                Relaunching the validated corridor through compliant partners and
-                stronger payout infrastructure.
+                Validated corridor being prepared for a compliant relaunch with
+                stronger local payout connectivity.
               </p>
             </div>
 
@@ -135,8 +136,8 @@ export default function Home() {
                 Europe → India
               </h3>
               <p className="text-gray-600 text-sm">
-                Preparing a partner-led route using regulated infrastructure and
-                local payout rails such as IMPS/UPI where applicable.
+                Strategic corridor under preparation through approved partners
+                and local payout rails such as IMPS/UPI where applicable.
               </p>
             </div>
 
@@ -145,16 +146,17 @@ export default function Home() {
                 Africa payout layer
               </h3>
               <p className="text-gray-600 text-sm">
-                Evaluating partners for mobile money, local bank payouts, FX,
-                stablecoin settlement and pan-African coverage.
+                Evaluating partners for mobile money, local bank payouts, FX and
+                broader pan-African coverage.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* App Download */}
-      <DownloadApp />
+        {/* App Download */}
+         <DownloadApp />
+
 
       {/* CTA Final */}
       <section className="py-20 text-center">
@@ -164,7 +166,7 @@ export default function Home() {
           </h2>
 
           <p className="text-lg text-gray-600 mb-8">
-            We are speaking with regulated infrastructure providers, payout partners,
+            We are speaking with infrastructure providers, payout partners,
             fintech lawyers and investors as we prepare the next stage of MB Send.
           </p>
 
