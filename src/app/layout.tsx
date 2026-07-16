@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "MB Send is a modern fintech platform enabling fast, secure international money transfers.",
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/mb-send-logo.ico', sizes: 'any' },   // 👈 corrigido
       { url: '/images/logo.svg', type: 'image/svg+xml' },
     ],
     apple: '/images/logo.svg',
@@ -46,6 +46,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/mb-send-logo.ico" sizes="any" />   {/* 👈 corrigido */}
+        <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+        <link rel="apple-touch-icon" href="/images/logo.svg" />
+        <meta name="theme-color" content="#2563EB" />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <Navbar />
         <main className="min-h-screen">{children}</main>
