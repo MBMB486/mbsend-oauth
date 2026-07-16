@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.mbsend.com'), // 👈 importante para resolver URLs relativos
+  metadataBase: new URL('https://www.mbsend.com'),
   title: "MB Send – Cross-Border Payments Simplified",
   description: "MB Send is a modern fintech platform enabling fast, secure international money transfers.",
   icons: {
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     siteName: "MB Send",
     images: [
       {
-        url: "https://www.mbsend.com/images/og-image.png", // 👈 imagem que criaste
-         width: 2840,
-         height: 1120
+        url: "https://www.mbsend.com/images/og-image.png",
+        width: 1200,
+        height: 473,
         alt: "MB Send",
       },
     ],
